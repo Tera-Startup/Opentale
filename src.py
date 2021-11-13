@@ -41,4 +41,4 @@ def fish(fish, TIME):
   print("You fished some ", fish)
   Username = input("Type the username of the personx who will have this ", fish, " > ")
   db["INV_" + Username] += (" " + fish)
-  
+  print("")
