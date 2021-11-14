@@ -10,7 +10,7 @@ if loginsignup == "1":
   src.login()
 elif loginsignup == dbCheck:
 
-    print(db.keys())
+    input(db.keys())
 elif loginsignup == "2":
   src.clear()
   try:

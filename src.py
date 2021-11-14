@@ -32,13 +32,16 @@ def pickup(plant, TIME):
   print("You pick up a ", plant, "...")
   wait(TIME)
   print("You picked up a ", plant)
-  Username = input("Type the username of the person who will have this ", plant, " > ")
+  Username = input("Type the username of the person who will have this " + plant + " > ")
   db["INV_" + Username] += (" " + plant)
 
 def fish(fish, TIME):
   print("You fish some ", fish, "...")
   wait(TIME)
   print("You fished some ", fish)
-  Username = input("Type the username of the personx who will have this ", fish, " > ")
+  Username = input("Type the username of the personx who will have this " + fish + " > ")
   db["INV_" + Username] += (" " + fish)
   print("")
+
+def zone(zone):
+  print("Zone : ", zone,"\n")
